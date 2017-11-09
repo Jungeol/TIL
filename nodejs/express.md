@@ -127,6 +127,21 @@ sendFile
 ```
 response.sendFile("/path/to/some_file.txt");
 ```
+json
+```
+response.json({ result: "blabla" });
+```
+crud
+```
+app.get("/", function (req, res) { ... });
+app.post("/", function (req, res) { ... });
+app.put("/", function (req, res) { ... });
+app.delete("/", function (req, res) { ... });
+```
+send
+```
+app.send("message");
+```
 ## ejs view
 Ejs view setup
 ```
