@@ -1,4 +1,4 @@
-# Testing
+# unit Test
 ## 코드검사
 1. 동료검토
 2. Code linter
@@ -54,3 +54,38 @@ describe("module", function () {
     ...
 });
 ```
+mocha before each
+```
+describe("User", function () {
+    var user;
+    beforeEach(function () {
+        user = new User({
+            firstName: "fname",
+            lastName: "lname"
+        });
+    });
+
+    it("something", function () {
+        expect(user.getName()).to.equal("fname lname");
+    });
+    //...
+})
+```
+error test
+```
+//...
+it("throws an error", function() {
+    expect(function() { capitalize(123); }).to.throw(Error);
+});
+//...
+```
+not
+```
+//...
+if("changes the value", function () {
+    expect(capitalize("foo")).not.to.expect("foo");
+});
+//...
+```
+# EndPoint Test
+## 
