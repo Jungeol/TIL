@@ -8,3 +8,13 @@ Section "Device"
    Option      "TearFree"    "true"
 EndSection
 ```
+install tlp
+```
+sudo apt install tlp
+sudo tlp start
+```
+install powertop
+```
+sudo apt install powertop
+sudo powertop --calibrate
+```
