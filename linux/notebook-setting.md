@@ -18,3 +18,8 @@ install powertop
 sudo apt install powertop
 sudo powertop --calibrate
 ```
+한/영 and 한자
+```
+$sudo apt install gnome-tweak-tool
+#입력 -> 한국어 한/영 한자키 설정
+```
