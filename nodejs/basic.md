@@ -50,3 +50,10 @@ console.log(randomInt());
 ```
 npm install nodemon --global
 ```
+### run code by commandline
+```
+//in browser no require
+if (typeof require !== 'undefined' && require.main === module) {
+    let parameter = process.argv.slice(2)
+}
+```
