@@ -1,7 +1,18 @@
 # JavaScript Sort
 ## Notes
 - Javascript's sort function is basically sorted by string(even if the value is a number).
+```
+var arr = [2,12,3,4,1];
+console.log(arr.sort());
+// [1, 12, 2, 3, 4]
+```
 - Target Array is sorted in place, and return value is target Array.
+```
+var arr = [4,5,1,3,2];
+arr.sort();
+console.log(arr);
+// [1, 2, 3, 4, 5]
+```
 ## String Sort
 
 ```
@@ -26,6 +37,24 @@ arr.sort(function (a, b) {
     return a - b;
 });
 //DESC
+arr.sort(function (a, b) {
+    return b - a;
+});
+```
+JavaScript's Date object
+```
+var arr = [
+    new Date("2018-02-02"),
+    new Date("2018-01-11"),
+    new Date("2018-04-11"),
+    new Date("2018-05-30"),
+    new Date("2018-01-23"),
+];
+// ASC
+arr.sort(function (a, b) {
+    return a - b;
+});
+// DESC
 arr.sort(function (a, b) {
     return b - a;
 });
