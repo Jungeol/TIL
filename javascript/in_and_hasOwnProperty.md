@@ -1,5 +1,4 @@
-# JavaScript Basic
-## 'in' or 'object.hasOwnProperty'
+# Javascript 'in' and 'object.hasOwnProperty'
 ```
 var book = {
     title: "High Performance JavaScript",

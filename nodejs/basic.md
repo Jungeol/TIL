@@ -7,26 +7,38 @@
     "author": "your name",
     "private": true,
     "dependencies": {},
+    "devDependencies": {},
     "scripts": {
-        "start": "node app"
+        "start": "node app",
     }
 }
 ```
 ### run scripts
 ```
-$ npm start
+$ npm run start
 ```
 ### install module
 ```
-$ npm install {{module-name}} --save
-# install local and auto save package.json dependenties.
+# install global: -g
 $ npm install {{module-name}} --global
-# install global
+# install local and auto save package.json dependenties.
+$ npm install {{module-name}} --save
+# install development only
+$ npm install {{module-name}} --save-dev
+```
+### install specific version
+```
+# install v4
+$ npm install lodash@4
+# install v4.x.x
+$ npm install lodash@^4.0.0
+# install v4.17.4
+$ npm install lodash@4.17.4
 ```
 ## use installed module
 ```
-var module = require("module-name");
-//.....
+# use module
+var iModule = require("module-name");
 ```
 ## user module
 ### exports
@@ -48,7 +60,10 @@ console.log(randomInt());
 ```
 ### nodemon
 ```
-npm install nodemon --global
+# install
+$ npm install nodemon --global
+# run
+$ nodemon index.js
 ```
 ### run code by commandline
 ```
